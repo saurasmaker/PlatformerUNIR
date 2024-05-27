@@ -64,16 +64,13 @@ public class PlayerController : MonoBehaviour
     #region Debug Attributes
     [Header("Debug")]
     [SerializeField]
-    [CustomEditor.ReadOnly]
     private bool _canMove = true, _canJump = true, _canCrouch = true, _canRoll = true, _canAttack = true;
     
     [SerializeField]
-    [CustomEditor.ReadOnly]
     private bool _moving = false, _jumping = false, _crouching = false, _rolling = false,
         _attacking1 = false, _attacking2 = false, _knocked = false, _grounded = false;
 
     [SerializeField]
-    [CustomEditor.ReadOnly]
     private float _maxCurrentSpeed, _currentVelocityX;
     #endregion
 
